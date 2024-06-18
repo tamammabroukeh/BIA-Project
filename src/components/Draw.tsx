@@ -146,9 +146,13 @@ const TrucksGraph: React.FC<Props> = ({ data }) => {
   return (
     <svg
       ref={svgRef}
-      width="800"
+      width="750"
       height="600"
-      style={{ backgroundColor: "#2e3725" }}
+      style={{
+        backgroundColor: "#2e3725",
+        border: "1px solid #2a7725",
+        borderRadius: "5px",
+      }}
     >
       <g />
     </svg>

@@ -27,7 +27,7 @@ export default function Form() {
     <>
       <div
         className="border-[2px] rounded-md
-    border-solid py-16 px-10 custom-bg"
+    border-solid py-16 px-8 custom-bg"
       >
         <motion.form
           variants={container}
@@ -99,7 +99,7 @@ export default function Form() {
             <Label
               classes="mx-1 text-gray-400"
               htmlFor="citiesDistances"
-              title="Enter the distances between cities as (AB:10 BC:20 AC:15):"
+              title="Enter the distances between cities as (AB:10 BC:20 AC:15) : "
             />
             <Input
               className="p-2"
