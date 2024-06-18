@@ -27,7 +27,7 @@ export default function Form() {
     <>
       <div
         className="border-[2px] rounded-md
-    border-solid py-16 px-10 custom-bg"
+    border-solid p-10 custom-bg"
       >
         <motion.form
           variants={container}
