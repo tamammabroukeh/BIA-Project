@@ -99,7 +99,7 @@ export default function Form() {
             <Label
               classes="mx-1 text-gray-400"
               htmlFor="citiesDistances"
-              title="Enter the distances between cities as (AB:10 BC:20 AC:15) : "
+              title="Enter the distances between cities as (AB:10 BC:20 AC:15):"
             />
             <Input
               className="p-2"
