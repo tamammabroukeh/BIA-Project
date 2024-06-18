@@ -8,7 +8,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tammammabroukeh.vercel.app/"),
+  metadataBase: new URL("https://bia-tsp-project.vercel.app/"),
   title: {
     default: "BIA HW",
     template: "%s | BIA",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "BIA HW",
     description:
       "I`m Tammam Mabroukeh. I`m Software Engineer, I code in JavaScript, especially ReactJS and NextJS. This project is about the traveling salesman algorithm. The project takes income from the user, representing the capacity of the trucks that will distribute the items and the value of each item, in addition to the city to which the item will go, as well as the distance between all cities, and then the algorithm distributes the trucks to the goods in the optimal way.",
-    url: "https://tammammabroukeh.vercel.app/",
+    url: "https://bia-tsp-project.vercel.app/",
     images: [
       {
         url: "../public/images.jpg",
