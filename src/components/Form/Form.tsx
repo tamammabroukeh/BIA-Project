@@ -27,14 +27,14 @@ export default function Form() {
     <>
       <div
         className="border-[2px] rounded-md
-    border-solid py-16 px-8 custom-bg"
+    border-solid py-16 px-10 custom-bg"
       >
         <motion.form
           variants={container}
           initial="hidden"
           animate="show"
           onSubmit={handleSubmit(onSubmit)}
-          className="max-w-md w-full flex flex-col space-y-5"
+          className="max-w-md w-full flex flex-col space-y-8"
         >
           {/* truck capacity */}
           <div className="space-y-2">
