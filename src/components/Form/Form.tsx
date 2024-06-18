@@ -74,7 +74,7 @@ export default function Form() {
             <Label
               classes="mx-1 text-gray-400"
               htmlFor="packagesInfo"
-              title="Enter package values ​​and where each package will go as (5:A 7:B 10:C) : "
+              title="Enter package values ​​and where each package will go as (5:A 7:B 10:C 8:D) : "
             />
             <Input
               errors={{
@@ -99,7 +99,7 @@ export default function Form() {
             <Label
               classes="mx-1 text-gray-400"
               htmlFor="citiesDistances"
-              title="Enter the distances between cities as (AB:10 BC:20 AC:15) : "
+              title=" Enter the distances between cities as (AB:10 AC:15 AD:7 BC:20 BD:5 CD:8) : "
             />
             <Input
               className="p-2"
