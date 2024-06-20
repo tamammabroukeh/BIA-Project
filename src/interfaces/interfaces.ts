@@ -10,7 +10,6 @@ export type IFormData = {
 export interface IError {
   reset: () => void;
   error: string;
-  // error: Error;
 }
 export interface IPackages {
   [key: string]: unknown[];

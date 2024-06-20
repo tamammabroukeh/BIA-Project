@@ -5,7 +5,7 @@ import Input from "@/utils/Input";
 import useTSPForm from "@/hooks/useTSPForm";
 import Label from "@/utils/Label";
 import DrawingComponent from "@/components/Draw";
-
+// some style
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -16,19 +16,23 @@ const container = {
     },
   },
 };
-
+// for animation
 const item = {
   hidden: { scale: 0 },
   show: { scale: 1 },
 };
 export default function Form() {
-  const { errors, handleSubmit, onSubmit, register, response } = useTSPForm();
+  // hook for logic form
+  const { errors, handleSubmit, onSubmit, register, response, loading } =
+    useTSPForm();
+  console.log(loading);
   return (
     <>
       <div
         className="border-[2px] rounded-md
     border-solid p-10 custom-bg"
       >
+        {/* form  */}
         <motion.form
           variants={container}
           initial="hidden"
@@ -43,6 +47,7 @@ export default function Form() {
               htmlFor="capacities"
               title="Enter the Truck capacities as 10 15 20 ..."
             />
+            {/* trucks input */}
             <Input
               errors={{
                 required: `Truck capacity are required!`,
@@ -59,6 +64,7 @@ export default function Form() {
               register={register}
               type="text"
             />
+            {/* to show the error for trucks input */}
             {errors.trucksCapacities && (
               <FormError
                 message={
@@ -76,6 +82,7 @@ export default function Form() {
               htmlFor="packagesInfo"
               title="Enter package values ​​and where each package will go as (5:A 7:B 10:C 8:D) : "
             />
+            {/* packages input */}
             <Input
               errors={{
                 required: `Packages information are required!`,
@@ -86,6 +93,7 @@ export default function Form() {
               register={register}
               type="text"
             />
+            {/* to show the error for packages input */}
             {errors.packagesInfo && (
               <FormError
                 message={
@@ -101,6 +109,7 @@ export default function Form() {
               htmlFor="citiesDistances"
               title=" Enter the distances between cities as (AB:10 AC:15 AD:7 BC:20 BD:5 CD:8) : "
             />
+            {/* citiesDistances input */}
             <Input
               className="p-2"
               errors={{
@@ -111,6 +120,7 @@ export default function Form() {
               register={register}
               type="text"
             />
+            {/* to show the error for cities distances input */}
             {errors.citiesDistances && (
               <FormError
                 message={
@@ -121,6 +131,7 @@ export default function Form() {
               />
             )}
           </div>
+          {/* Start button */}
           <motion.input
             variants={item}
             value="Start"
@@ -131,6 +142,7 @@ export default function Form() {
           />
         </motion.form>
       </div>
+      {/* to show the draw */}
       {response && <DrawingComponent data={response} />}
     </>
   );

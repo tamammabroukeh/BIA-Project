@@ -7,6 +7,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
+// metadata for seo
 export const metadata: Metadata = {
   metadataBase: new URL("https://bia-tsp-project.vercel.app/"),
   title: {
